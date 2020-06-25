@@ -30,7 +30,6 @@ const SEO = ({ description, lang, meta, title, location }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const cardUrl = `${site.siteMetadata.siteUrl}${location.pathname}card.jpg`
-  console.log(cardUrl)
   return (
     <>
       <Helmet

@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Gatsby Automated Social Cards`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Perttu Lähteenlahti`,
+      summary: `. This site highlights the functionality of automatically creating social cards with rich information.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `How `,
+    siteUrl: `https://social-cards.lahteenlahti.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `plahteenlahti`,
     },
   },
   plugins: [
@@ -30,6 +30,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-plugin-social-sharing-cards`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -60,11 +61,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Gatsby Automatic Social Cards`,
+        short_name: `Social Cards`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: `#333`,
+        theme_color: `#333`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },

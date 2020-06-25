@@ -60,8 +60,8 @@ const SEO = ({ description, lang, meta, title, location }) => {
             content: cardUrl,
           },
           {
-            name: `twitter:summary_large_image`,
-            content: `summary`,
+            name: `twitter:card`,
+            content: `summary_large_image`,
           },
           {
             name: `twitter:creator`,

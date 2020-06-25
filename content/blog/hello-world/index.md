@@ -1,7 +1,7 @@
 ---
-title: "Hello World"
+title: "1st Example"
 date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+description: "First example of generating social sharing cards."
 tags: ["Example", "Placeholder"]
 ---
 

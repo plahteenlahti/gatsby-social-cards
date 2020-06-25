@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
+import styled from "styled-components"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -37,6 +37,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {post.frontmatter.date}
           </p>
         </header>
+        <section>
+          <h4>The social card for this post looks like this:</h4>
+          <Image src={`${location.pathname}/card.jpg`} />
+        </section>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
@@ -98,4 +102,9 @@ export const pageQuery = graphql`
       }
     }
   }
+`
+
+const Image = styled.img`
+  width: 80%;
+  box-shadow: 20px 20px 60px #c1c1c1, -20px -20px 60px #ffffff;
 `

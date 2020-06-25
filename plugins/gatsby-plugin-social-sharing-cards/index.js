@@ -17,9 +17,7 @@ module.exports = async ({ markdownNode }) => {
   const time = readingTime ? `${Math.ceil(readingTime.minutes)}m` : "3m"
 
   const titleFont = await jimp.loadFont(`${__dirname}/fonts/Title.fnt`)
-  const detailFont = await jimp.loadFont(
-    `${__dirname}/fonts/Montserrat-Medium.ttf.fnt`
-  )
+  const detailFont = await jimp.loadFont(`${__dirname}/fonts/Detail.fnt`)
 
   return Promise.all([jimp.read(`${__dirname}/templates/default.png`)]).then(
     ([image]) => {
